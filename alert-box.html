@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Alert Box</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="test.css" />
+  </head>
+  <body>
+    <div class="container-box" id="container-b">
+      <button class="alert-btn" id="alert-b">Click Me</button>
+    </div>
+    <script src="alert-box.js"></script>
+    <script defer>
+      // customAlert(
+      //   'You are Successfully registered!',
+      //   'allow',
+      //   'custom-alert-box-2'
+      // );
+      customAlert('You are Successfully registered!');
+      // customCss('allow', 'custom-alert-box-2');
+      alertOnClick(
+        'allow',
+        'alert-b',
+        'Hello World!',
+        'allow',
+        'custom-alert-box-1'
+      );
+      // customCss('no', 'custom-alert-box-2');
+    </script>
+  </body>
+</html>
