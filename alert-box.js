@@ -6,7 +6,7 @@ const containerBox = document.querySelector('body');
 let classAd;
 let alertBtn;
 
-const customAlert = (msg, permCss, className) => {
+const customAlert = (msg, allowCss, className) => {
   const alertBox = document.createElement('div');
   containerBox.appendChild(alertBox);
   alertBox.innerText = msg;
@@ -14,31 +14,28 @@ const customAlert = (msg, permCss, className) => {
   classAd = alertBox.classList;
   classAd.add('custom-alert-box');
 
-  customCss(permCss, className);
+  customCss(allowCss, className);
 
   const hideAlertBox = function () {
     alertBox.remove();
   };
 
-  setTimeout(hideAlertBox, 4000);
+  setTimeout(hideAlertBox, 2000);
 };
 
 const customCss = (permission, className) => {
   if (permission == 'allow') {
     classAd.add(className);
     classAd.remove('custom-alert-box');
-    // console.log(customAlert());
   }
 };
 
-const alertOnClick = function (permission, idName, msg1, permCss, className) {
-  if (permission == 'allow') {
-    alertBtn = document.querySelector('#' + idName);
+const alertOnClick = function (idName, msg1, allowCss, className) {
+  alertBtn = document.querySelector('#' + idName);
 
-    alertBtn.addEventListener('click', function () {
-      customAlert(msg1);
-      customCss(permCss, className);
-      // console.log(customCss);
-    });
-  }
+  alertBtn.addEventListener('click', function () {
+    customAlert(msg1);
+    customCss(allowCss, className);
+    // console.log(customCss);
+  });
 };
