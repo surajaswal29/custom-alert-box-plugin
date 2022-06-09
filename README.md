@@ -5,7 +5,7 @@ Just Download the JS file and use it in your project.
 Must Include CSS Code/Default Custom Alert Box Class:
 <br/>
 
-<pre>
+<pre style='color:#58a6eb'>
 /* must include css */
 .custom-alert-box {
   position: absolute;
