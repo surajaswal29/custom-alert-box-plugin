@@ -1,9 +1,10 @@
 # customAlertBoxPlugin
 <h1>Custom Alert Box Plugin Using JavaScript and CSS </h1>
 <b>Author: <a href="https://surajaswal.dev/">Suraj Aswal</a></b></br>
+</br>
 Must Include CSS Code/Default Custom Alert Box Class:
 <br/>
-
+<br/>
 <pre>
 /* must include css */
 .custom-alert-box {
@@ -27,7 +28,7 @@ Must Include CSS Code/Default Custom Alert Box Class:
 }
 </pre>
 </br>
-You can also include your CSS to the custom alert box. <br/>
+You can also include your custom CSS to the alert box. <br/>
 <br/>
 This Plugin has two type of Alert Boxes: <br/>
 <br/>
