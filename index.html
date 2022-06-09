@@ -10,24 +10,13 @@
     <link rel="stylesheet" href="test.css" />
   </head>
   <body>
-    <div class="container-box" id="container-b">
-      <button class="alert-btn" id="alert-b">Click Me</button>
-    </div>
+    <!-- button -->
+    <button class="alert-btn" id="alert-b">Cick Me</button>
+
     <script src="alert-box.js"></script>
     <script defer>
-      // customAlert(
-      //   'You are Successfully registered!',
-      //   'allow',
-      //   'custom-alert-box-2'
-      // );
-      customAlert('You are Successfully registered!');
-      alertOnClick(
-        'allow',
-        'alert-b',
-        'Hello World!',
-        'allow',
-        'custom-alert-box-1'
-      );
+      customAlert('This is custom alert Box !');
+      alertOnClick('allow', 'alert-b', 'Custom Alert Box onClick');
     </script>
   </body>
 </html>
