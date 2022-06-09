@@ -3,8 +3,28 @@ Custom Alert Box Plugin Using JavaScript and CSS.
 Just Download the JS file and use it in your project.
 
 Must Include CSS Code/Default Custom Alert Box Class:
-
-![Screenshot (60)](https://user-images.githubusercontent.com/87890258/172702516-4541b4f5-4842-4183-9a88-68eb93d6efa8.png)
+<br/>
+/* must include css */<br/>
+.custom-alert-box {<br/>
+  position: absolute;<br/>
+  top: 0%;<br/>
+  padding: 20px;<br/>
+  font-size: 16px;<br/>
+  color: #ffffff;<br/>
+  font-family: Arial, Helvetica, sans-serif;<br/>
+  background-color: #58a6eb;<br/>
+  animation: alert-box 1s ease;<br/>
+}<br/>
+<br/>
+@keyframes alert-box {<br/>
+  0% {<br/>
+    top: -10%;<br/>
+  }<br/>
+  100% {<br/>
+    top: 0%;<br/>
+  }<br/>
+}<br/>
+<br/>
 
 You can also include your CSS to the custom alert box. <br/>
 <br/>
