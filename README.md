@@ -39,19 +39,49 @@ Alert Box will automatically disappear after 4 seconds.<br/>
 Demo link => <a href="https://surajaswal-dev.github.io/customAlertBoxPlugin/">Click for Demo</a>
 <br/>
 <h1>How to use this plugin?</h1>
-<h2>Step 1:</h2><br/>
+<h2>Step 1:</h2>
 Download the <b>alert-box.js</b> file.<br/>
-<h2>Step 2:</h2><br/>
+<h2>Step 2:</h2>
 Include the alert-box.js file to your HTML file<br/>
 <pre>
    <script src="alert-box.js"></script>
 </pre>
-<h2>Step 3:</h2><br/>
-(1.) Call customAlert() function for alert box on page load. <br/>
-(2.) Call alertOnClick() function for alert box on click. <br/>
+<h2>Step 3:</h2>
+(1) Call customAlert() function for alert box on page load. <br/>
+(2) Call alertOnClick() function for alert box on click. <br/>
+<br>
 <pre>
- <script defer>
-     customAlert('This is custom alert Box !'); //alert box on load
-     alertOnClick('allow', 'alert-b', 'Custom Alert Box onClick'); //alert box on click
-  </script>  
+<script defer>
+   customAlert('This is custom alert Box !'); //alert box on load
+   alertOnClick('alert-b', 'Custom Alert Box onClick'); //alert box on click
+ </script>  
 </pre>
+
+<b>customAlert() function will take three arguments</b>
+1. message
+2. allow custom css (optional)
+3. custom css className (optional)
+
+Example:
+
+<pre>
+<script defer>
+  customAlert('This is custom alert Box !','allow','custom-class-name');
+</script>
+</pre>
+
+<b>alertOnClick() function wil take four arguments</b>
+1. Id Name of the element on which you want to apply onclick event.
+2. message
+3. allow custom css (optional)
+4. custom css className (optional
+
+Example:
+
+<pre>
+<script defer>
+  alertOnClick('alert-b', 'Custom Alert Box onClick','allow','custom-class-name');
+</script>
+</pre>
+
+<em>Note: By allowing custom css you give your own styling to the alert box.</em>
