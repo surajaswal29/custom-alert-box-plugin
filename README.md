@@ -36,3 +36,5 @@ This Plugin has two type of Alert Boxes: <br/>
 2). Alert Box on Click the button. <br/>
 <br/>
 Alert Box will automatically disappear after 4 seconds.
+
+Demo link => <a href="https://surajaswal-dev.github.io/customAlertBoxPlugin/">Click for Demo</a>
