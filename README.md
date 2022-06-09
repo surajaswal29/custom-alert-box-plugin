@@ -39,14 +39,19 @@ Alert Box will automatically disappear after 4 seconds.<br/>
 Demo link => <a href="https://surajaswal-dev.github.io/customAlertBoxPlugin/">Click for Demo</a>
 <br/>
 <h1>How to use this plugin?</h1>
-<br/>
 <h2>Step 1:</h2><br/>
 Download the <b>alert-box.js</b> file.<br/>
 <h2>Step 2:</h2><br/>
 Include the alert-box.js file to your HTML file<br/>
-<script src="alert-box.js"></script>
-
-    <script defer>
-      customAlert('This is custom alert Box !');
-      alertOnClick('allow', 'alert-b', 'Custom Alert Box onClick');
-    </script>
+<pre>
+   <script src="alert-box.js"></script>
+</pre>
+<h2>Step 3:</h2><br/>
+(1.) Call customAlert() function for alert box on page load. <br/>
+(2.) Call alertOnClick() function for alert box on click. <br/>
+<pre>
+ <script defer>
+     customAlert('This is custom alert Box !'); //alert box on load
+     alertOnClick('allow', 'alert-b', 'Custom Alert Box onClick'); //alert box on click
+  </script>  
+</pre>
