@@ -4,28 +4,30 @@ Just Download the JS file and use it in your project.
 
 Must Include CSS Code/Default Custom Alert Box Class:
 <br/>
-/* must include css */<br/>
-.custom-alert-box {<br/>
-  position: absolute;<br/>
-  top: 0%;<br/>
-  padding: 20px;<br/>
-  font-size: 16px;<br/>
-  color: #ffffff;<br/>
-  font-family: Arial, Helvetica, sans-serif;<br/>
-  background-color: #58a6eb;<br/>
-  animation: alert-box 1s ease;<br/>
-}<br/>
-<br/>
-@keyframes alert-box {<br/>
-  0% {<br/>
-    top: -10%;<br/>
-  }<br/>
-  100% {<br/>
-    top: 0%;<br/>
-  }<br/>
-}<br/>
-<br/>
 
+<pre>
+/* must include css */
+.custom-alert-box {
+  position: absolute;
+  top: 0%;
+  padding: 20px;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #58a6eb;
+  animation: alert-box 1s ease;
+}
+
+@keyframes alert-box {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+</pre>
+</br>
 You can also include your CSS to the custom alert box. <br/>
 <br/>
 This Plugin has two type of Alert Boxes: <br/>
