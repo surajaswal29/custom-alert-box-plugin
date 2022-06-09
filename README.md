@@ -1,6 +1,6 @@
 # customAlertBoxPlugin
 <h1>Custom Alert Box Plugin Using JavaScript and CSS </h1>
-
+<b>Author: <a href="https://surajaswal.dev/">Suraj Aswal</a></b></br>
 Must Include CSS Code/Default Custom Alert Box Class:
 <br/>
 
