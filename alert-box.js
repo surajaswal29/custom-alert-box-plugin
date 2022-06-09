@@ -1,12 +1,12 @@
 // Author: Suraj Aswal
 'use strict';
 
-const containerBox = document.querySelector('#container-b');
+const containerBox = document.querySelector('body');
 
 let classAd;
 let alertBtn;
 
-const customAlert = (msg, cssPerm, className) => {
+const customAlert = (msg, permCss, className) => {
   const alertBox = document.createElement('div');
   containerBox.appendChild(alertBox);
   alertBox.innerText = msg;
@@ -14,7 +14,7 @@ const customAlert = (msg, cssPerm, className) => {
   classAd = alertBox.classList;
   classAd.add('custom-alert-box');
 
-  customCss(cssPerm, className);
+  customCss(permCss, className);
 
   const hideAlertBox = function () {
     alertBox.remove();
@@ -31,13 +31,13 @@ const customCss = (permission, className) => {
   }
 };
 
-const alertOnClick = function (permission, idName, msg1, cssPerm, className) {
+const alertOnClick = function (permission, idName, msg1, permCss, className) {
   if (permission == 'allow') {
     alertBtn = document.querySelector('#' + idName);
 
     alertBtn.addEventListener('click', function () {
       customAlert(msg1);
-      customCss(cssPerm, className);
+      customCss(permCss, className);
       // console.log(customCss);
     });
   }
